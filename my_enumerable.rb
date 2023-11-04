@@ -10,10 +10,11 @@ module MyEnumerable
       puts true if yield i
     end
     puts false
+  end
 
-    def filter
-      @array = []
-      @list.each { |i| @array.push(i) if yield i }
-      print "#{@array}\n"
-    end
+  def filter
+    @array = []
+    @list.each { |i| @array.push(i) if yield i }
+    print "#{@array}\n"
+  end
 end

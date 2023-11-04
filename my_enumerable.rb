@@ -16,5 +16,4 @@ module MyEnumerable
       @list.each { |i| @array.push(i) if yield i }
       print "#{@array}\n"
     end
-  end
 end
